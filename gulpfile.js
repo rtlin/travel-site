@@ -1,10 +1,9 @@
-var gulp = require('gulp');
-var watch = require('gulp-watch');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var cssvars = require('postcss-simple-vars');
-var nested = require('postcss-nested');
+require('./gulp/tasks/styles');
+require('./gulp/tasks/watch');
+//var gulp = require('gulp'),
+//watch = require('gulp-watch');
 
+/*
 gulp.task('default', function(){
 	console.log("Hooray - you created a Gulp tsk");
 });
@@ -12,19 +11,6 @@ gulp.task('default', function(){
 gulp.task('html', function(){
  console.log("html here.");
 });
-gulp.task('styles', function(){
-	console.log("style here");
-	return gulp.src('./app/assets/styles/styles.css')
-		.pipe(postcss([cssvars, nested, autoprefixer]))
-		.pipe(gulp.dest('./app/temp/styles'));
-});
+*/
 
-gulp.task('watch', function(){
-	watch('./app/index.html', function(){
-		gulp.start('html');
-	});
-	watch('./app/assets/styles/**/*.css', function(){
-		gulp.start("styles");
-	});
-});
 

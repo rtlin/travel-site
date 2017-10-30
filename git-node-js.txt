@@ -1,0 +1,82 @@
+
+node hellowWorld.js 
+then open the browser: localhost:8080
+
+——————————————
+https://www.siteground.com/tutorials/git/commands/
+
+create new repository:
+http://kbroman.org/github_tutorial/pages/init.html
+you need to create a new repostory (e.g staging) on github first.
+then follow the instruction to create more(see below)
+if you copy from other people's repo and try to put to your own one. you need to remove all hidden fides that related to other people's repo info. then follow the instruction below.
+
+
+echo "# staging" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/rtlin/staging.git
+git push -u origin master
+
+
+git pull origin
+git add filename
+git config --global user.email "you@gmail.com"
+git commit -m "window updated" filename
+git push origin master
+
+
+git branch (list all branch)
+git checkout -b V/window-1 (create new branch)
+git checkout V/window-1    (change to new branch)
+git push origin V/window-1  (push branch on github)
+git add filename
+git commit -m "updated from V/window-1" filename
+git push V/window-1
+
+git checkout -- . (get all original files)
+
+git branch -d branch_name
+git branch -D branch_name
+
+
+(copy other's repo to my repo)
+git clone https://github.com/LearnWebCode/travel-site-files.git
+change /travel-site-files to /travel-site (matched the new repo name i created)
+cd travel-site:
+git remote -v (see where the original repo from)
+git remote set-url origin https://github.com/rtlin/travel-site.git  (will move the current other people repo to my repo)
+git push origin master
+
+add new and update files to gitHub
+git status
+git add -f *
+git commit -a -m "add all"
+git push origin master
+
+-------------------
+npm install jquery --save
+
+npm install (install all package from package.json)
+npm install gulp-cli --global
+
+npm install gulp --save-dev
+npm install gulp-watch --save-dev
+npm install gulp-postcss --save-dev
+npm install autoprefixer --save-dev
+npm install postcss-simple-vars --save-dev
+npm install postcss-nested --save-dev
+
+file architecture:
+
+npm install postcss-import --save-dev
+
+B.E.M (css selector)
+(Block, Element, Modifier)
+
+npm install browser-sync --save-dev
+npm install postcss-mixins --save-dev
+
+
+
