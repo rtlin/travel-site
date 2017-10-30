@@ -44,6 +44,11 @@ git remote -v (see where the original repo from)
 git remote set-url origin https://github.com/rtlin/travel-site.git  (will move the current other people repo to my repo)
 git push origin master
 
+add new and update files to gitHub
+git status
+git add -f *
+git commit -a -m "add all"
+git push origin master
 
 -------------------
 npm install jquery --save
