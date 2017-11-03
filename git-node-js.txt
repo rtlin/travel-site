@@ -52,8 +52,40 @@ git push origin master
 add new and update files to gitHub
 git status
 git add -f *
-git commit -a -m "add all"
+git add -A (add all files)
+git reset app/index.html (remove the file from add station area)
+git commit -a -m "add all" (same git commit -m “add all”)
+
 git push origin master
+
+git branch count-to-ten (create new branch)
+git checkout count-to-ten (switch to new branch)
+git branch (check the branches)
+
+*There are two ways to merge new branch to master:
+Way 1. branch merge
+git checkout master
+git merge count-to-ten
+
+Way 2. gitHub merge
+git commit -am ‘Count to 13’  (add and commit together)
+git push origin count-to-fifteen
+pull request, assignee, merged, delete branch
+git checkout master
+git pull origin master
+git branch -d count-to-fifteen
+
+
+git checkout -b our-features (create new branch and switch at one line)
+
+git new feature: (for clear management)
+git merge our-features --no-ff
+git push origin master
+
+
+
+
+
 
 -------------------
 npm install jquery --save
@@ -67,6 +99,7 @@ npm install gulp-postcss --save-dev
 npm install autoprefixer --save-dev
 npm install postcss-simple-vars --save-dev
 npm install postcss-nested --save-dev
+npm install gulp-svg-sprite --save-dev
 
 file architecture:
 
@@ -77,6 +110,21 @@ B.E.M (css selector)
 
 npm install browser-sync --save-dev
 npm install postcss-mixins --save-dev
+npm install gulp-rename --save-dev
+npm install del --save-dev
+npm install postcss-hexrgba --save-dev
 
+for js:
+npm install webpack -g
+npm install jquery --save
+npm install webpack --save-dev
+
+npm install babel-core babel-loader babel-preset-es2015 --save-dev
+
+
+gulp watch
+gulp createSprite
+gulp copySpriteCSS
+gulp icons (include two commands)
 
 
