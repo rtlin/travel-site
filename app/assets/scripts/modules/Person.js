@@ -1,4 +1,4 @@
-/* Emacs 5
+/* ECMAScript 5
 function Person(fullName, favColor) {
   this.name = fullName;
   this.favoriteColor = favColor;
