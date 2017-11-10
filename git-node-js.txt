@@ -123,6 +123,9 @@ npm install babel-core babel-loader babel-preset-es2015 --save-dev (Writing NPM 
 
 npm install waypoints --save (section 16 lecture 45)
 npm install jquery-smooth-scroll --save (section 17 lecture 47)
+npm install lazysizes --save (section 19 lecture 51)
+lazyload
+lazyloaded
 
 
 gulp watch
