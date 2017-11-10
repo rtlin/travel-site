@@ -119,9 +119,10 @@ npm install webpack -g
 npm install jquery --save
 npm install webpack --save-dev
 
-npm install babel-core babel-loader babel-preset-es2015 --save-dev
+npm install babel-core babel-loader babel-preset-es2015 --save-dev (Writing NPM packages with ES6 using the Babel 6 CLI)
 
 npm install waypoints --save (section 16 lecture 45)
+npm install jquery-smooth-scroll --save (section 17 lecture 47)
 
 
 gulp watch
