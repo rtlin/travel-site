@@ -1246,6 +1246,12 @@ Instead edit gulp/templates/sprite */
 			width: 20px;
 			height: 3px;
 			background-color:#FFF;
+			-webkit-transform-origin: 0 0;
+			        transform-origin: 0 0;
+			-webkit-transition: -webkit-transform .3s ease-out;
+			transition: -webkit-transform .3s ease-out;
+			transition: transform .3s ease-out;
+			transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 		}
 
 .site-header__menu-icon__middle{
@@ -1255,6 +1261,11 @@ Instead edit gulp/templates/sprite */
 			width: 20px;
 			height: 3px;
 			background-color:#FFF;
+			-webkit-transition: all .3s ease-out;
+			transition: all .3s ease-out;
+			-webkit-transform-origin: 0 50%;
+			        transform-origin: 0 50%;
+			
 		}
 
 .site-header__menu-icon::after{
@@ -1265,6 +1276,12 @@ Instead edit gulp/templates/sprite */
 			width: 20px;
 			height: 3px;
 			background-color:#FFF;
+			-webkit-transform-origin: 0 100%;
+			        transform-origin: 0 100%;
+			-webkit-transition: -webkit-transform .3s ease-out;
+			transition: -webkit-transform .3s ease-out;
+			transition: transform .3s ease-out;
+			transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 		}
 
 /*
@@ -1286,8 +1303,19 @@ Instead edit gulp/templates/sprite */
 	}
 
 .site-header__menu-icon--close-x::before {
-			-webkit-transform: rotate(45deg);
-			        transform: rotate(45deg);
+			-webkit-transform: rotate(45deg) scaleX(1.25);
+			        transform: rotate(45deg) scaleX(1.25);
+		}
+
+.site-header__menu-icon--close-x .site-header__menu-icon__middle{
+			opacity: 0;
+			-webkit-transform: scaleX(0);
+			        transform: scaleX(0);
+		}
+
+.site-header__menu-icon--close-x::after {
+			-webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
 		}
 
 .site-header__menu-content {
@@ -1401,5 +1429,20 @@ Instead edit gulp/templates/sprite */
 			padding: 12px 0;
 			background-color: transparent
 	}
+	}
+
+.reveal-item{
+	opacity: 0;
+	//transition: opacity 1.5s ease-out;
+	-webkit-transition: all 1.5s ease-out;
+	transition: all 1.5s ease-out;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+.reveal-item--is-visible{
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
 
