@@ -130,7 +130,12 @@ lazyloaded
 npm install picturefill --save (section 19 lecture 53) (support legacy browser not support responsive images)
 npm install gulp-svg2png --save-dev (section 19 lecture 54) (create png from svg file for browsers that not support svg image)
 
-npm install gulp-modernizr --save-dev (detect browser that not support svg)
+npm install gulp-modernizr --save-dev (detect browser that not support svg or flexbox)
+
+npm install gulp-imagemin --save-dev (compress the images)
+
+npm install gulp-usemin --save-dev (build css, js to destination)
+npm install gulp-rev gulp-cssnano gulp-uglify --save-dev (add version, compress css, js files)
 
 
 gulp watch
@@ -138,5 +143,7 @@ gulp createSprite
 gulp copySpriteCSS
 gulp icons (include two commands)
 gulp modernizr
+
+
 
 
