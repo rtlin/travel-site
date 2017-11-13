@@ -117,7 +117,18 @@ npm install postcss-hexrgba --save-dev
 for js:
 npm install webpack -g
 npm install jquery --save
-npm install webpack --save-dev
+npm install webpack --save-dev (know how to require different js modules. e.g.webpack.config.js)
+e.g. module.export = "Person"
+function printAvatar(){
+	console.log("Avatar: PG-13");
+}
+module.exports.avatar = printAvata;
+
+app.js:
+var movie = require("./movies");
+movie.avatar();
+
+
 
 npm install babel-core babel-loader babel-preset-es2015 --save-dev (Writing NPM packages with ES6 using the Babel 6 CLI)
 
@@ -143,6 +154,10 @@ gulp createSprite
 gulp copySpriteCSS
 gulp icons (include two commands)
 gulp modernizr
+
+
+finally web site live:
+https://rtlin.github.io/travel-site/
 
 
 
