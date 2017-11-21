@@ -83,6 +83,14 @@ git merge our-features --no-ff
 git push origin master
 
 
+git clone https://rtlin@github.com/rtlin/express.git  (should create the new keychains for this user at the first time)
+git pull https://robfox99@github.com/robfox99/fox1.git master 
+keychains
+
+git diff branch_1..branch_2
+git fetch (to checkout different branch from remote)
+git checkout <remote branch name>
+
 
 
 
