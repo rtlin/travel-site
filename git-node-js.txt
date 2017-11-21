@@ -91,6 +91,11 @@ git diff branch_1..branch_2
 git fetch (to checkout different branch from remote)
 git checkout <remote branch name>
 
+switch git user at terminal:
+$ git config --global user.name "Bob"
+$ git config --global user.email "bob@example.com"
+you'll need to remove authorization info from Keychain.
+
 
 
 
