@@ -18,6 +18,7 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/rtlin/staging.git
 git push -u origin master
+Or git push https://rtlin@github.com/rtlin/my-nuxt.git
 
 
 git pull origin
@@ -88,8 +89,11 @@ git pull https://robfox99@github.com/robfox99/fox1.git master
 keychains
 
 git diff branch_1..branch_2
+git diff --name-only branch_1..branch_2
 git fetch (to checkout different branch from remote)
 git checkout <remote branch name>
+git branch -va
+git checkout -b personal/sre/docker-local origin/personal/sre/docker-local
 
 switch git user at terminal:
 $ git config --global user.name "Bob"
@@ -160,6 +164,10 @@ npm install gulp-imagemin --save-dev (compress the images)
 
 npm install gulp-usemin --save-dev (build css, js to destination)
 npm install gulp-rev gulp-cssnano gulp-uglify --save-dev (add version, compress css, js files)
+
+extra for nuxt vue:
+npm install -g vue-cli
+
 
 
 gulp watch
